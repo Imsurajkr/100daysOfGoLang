@@ -12,13 +12,13 @@
 # We will start with 3 Books.
 
 ## Go Programming Cookbook: Over 85 recipes to build modular, readable, and testable Golang applications across various domains - Second Edition
-[Download](https://b-ok.asia/book/11004778/6ba7fc)
+[Download](https://www.dropbox.com/sh/6bvm62v7tr5w0gl/AADaLyW5LUPBzMttr7SOzZ2Sa?dl=0)
 
 ## Mastering Go: Create Golang production applications using network libraries, concurrency, machine learning, and advanced data structures
-[Download](https://b-ok.asia/book/5280516/5b0b36)
+[Download](https://www.dropbox.com/sh/6bvm62v7tr5w0gl/AADaLyW5LUPBzMttr7SOzZ2Sa?dl=0)
 
 ## Building RESTful Web services with Go: Learn how to build powerful RESTful APIs with Golang that scale gracefully.
-[Download](https://b-ok.asia/book/3427939/c04c63)
+[Download](https://www.dropbox.com/sh/6bvm62v7tr5w0gl/AADaLyW5LUPBzMttr7SOzZ2Sa?dl=0)
 
 ## Youtube Channels for Video reference :- 
 
