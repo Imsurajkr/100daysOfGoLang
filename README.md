@@ -3,7 +3,7 @@
 ![100days](https://res.cloudinary.com/practicaldev/image/fetch/s--KLoUWqZ---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/u5d7sosk30lm7pex8lqc.png)
 *100 Days of GoLang*
 
-<iframe src="https://giphy.com/embed/PhTSmzCqkliqIJ9ZtZ" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<img align='right' src="https://media.giphy.com/media/PhTSmzCqkliqIJ9ZtZ/giphy.gif" width="230">
 
 # We will start with 3 Books.
 
@@ -18,13 +18,9 @@
 
 ## Youtube Channels for Video reference :- 
 
-[By Coder Singh](https://www.youtube.com/watch?v=2SuBf2sk2ts&list=PL45_xGOyv4bk55CMmqH6S6vvnwKD8qifD)
+[By Coder Singh](https://www.youtube.com/watch?v=2SuBf2sk2ts&list=PL45_xGOyv4bk55CMmqH6S6vvnwKD8qifD)<br />
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=2SuBf2sk2ts&list=PL45_xGOyv4bk55CMmqH6S6vvnwKD8qifD" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-[By Free Code Camp](https://www.youtube.com/watch?v=YS4e4q9oBaU)
-
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=YS4e4q9oBaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[By Free Code Camp](https://www.youtube.com/watch?v=YS4e4q9oBaU)<br />
 
 ## Guidelines / What we are going to do 
 * Create at least 1 Programme per day. <br/>
