@@ -3,10 +3,10 @@
 ![100days](https://res.cloudinary.com/practicaldev/image/fetch/s--KLoUWqZ---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/u5d7sosk30lm7pex8lqc.png)
 *100 Days of GoLang*
 
-<img align='right' src="https://media.giphy.com/media/z4qDqKk7zWYIP9GEX6/giphy.gif" width="230">
+<img align='right' src="https://media.giphy.com/media/PhTSmzCqkliqIJ9ZtZ/giphy.gif" width="230">
 
 # Installing Go Lang 
-* Refer to the official documentation to Install and setup Go Lang.
+* Refer to the official documentation to Install and setup Go Lang
 * InCase if you face issues community is always available to help.
 
 # We will start with 3 Books.
