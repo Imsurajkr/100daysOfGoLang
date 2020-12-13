@@ -5,6 +5,10 @@
 
 <img align='right' src="https://media.giphy.com/media/PhTSmzCqkliqIJ9ZtZ/giphy.gif" width="230">
 
+# Installing Go Lang 
+* Refer to the official documentation to Install and setup Go Lang.
+* InCase if you face issues community is always available to help.
+
 # We will start with 3 Books.
 
 ## Go Programming Cookbook: Over 85 recipes to build modular, readable, and testable Golang applications across various domains - Second Edition
@@ -26,10 +30,10 @@
 * Create at least 1 Programme per day. <br/>
 * Add Comments and proper explanations of what that programme does. <br/>
 * Commit Message must be a proper statement of your programme.<br />
-* Everyday push your work to github. Create a Directory like Day1, Day2, Day3 etc. and push all your work.<br /> 
+* Everyday push your work to github.[here](https://github.com/Imsurajkr/100daysOfGoLang)<br /> 
 * Discipline is must. Everyday Just One hour or less than one hour but a single programme is must.<br />
 * Members are Contributors to that group. If you are serious than share your email id. <br />
-
+[docs](https://golang.org/doc/install)
 
 # Big Why ?
 
