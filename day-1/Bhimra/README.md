@@ -1,6 +1,6 @@
 <p>
   <h2 align="center"> DAY 1</h2></p>
-
+```go
     package hello  // package name hello   
     import (
         "fmt"
@@ -8,7 +8,7 @@
     func Hello() {
         fmt.Println(" run if you can")
     }
-
+```
 
 Above code showed a *ERROR : "go run: cannot run non-main package"* due to package name is not main.
 
