@@ -16,7 +16,7 @@ fmt.Print("hello",name)
 // the major difference between fmt.Println anf Printf is that fmt.Println()adds a newline character each time you call it.
 fmt.Printf("%s %s","hello" , name)
 //difference between fmt.Println() and fmt.Printf() is
-// that the latter requires a format specifier for each thing that you want to print.
+// that the  a Printf requires a format specifier for each thing that you want to print.
 
 
 }
