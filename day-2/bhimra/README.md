@@ -32,7 +32,7 @@
    <img align="center" src="‪https://github.com/Imsurajkr/100daysOfGoLang/blob/main/day-2/bhimra/externalcode.png" width="230">
 
    <p>
-      <h3>$ go get -v rsc.io/quote/v3 </h3>
+      <h3>$ go get -v rsc.io/quote/v3</h3>
 
       - download the external package from web
   </p>
