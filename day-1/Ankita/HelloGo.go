@@ -11,6 +11,7 @@ package main
 import "fmt"
 
 //implementation of code takes place here in main function.
+//you can not have multiple main function in your in the files of a single project.
 func main() {
 	fmt.Println("Hello World!!")
 }
