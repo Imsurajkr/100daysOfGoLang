@@ -27,7 +27,8 @@
   <br>
  
   # Downloading External packages for Go 
-  <img align="center" src="‪https://github.com/Imsurajkr/100daysOfGoLang/blob/main/day-2/bhimra/externalcode.png" width="230"> <br> 
+  
+  ![Test Image](externalcode.png) <br />
 
   <h3>$go get -v rsc.io/quote/v3</h3>  // Download the external package from web 
  
