@@ -8,9 +8,12 @@ func main() {
 	// For Loop
 	for i := 1; i <= 10; i++ {
 		for j := 2; j <= 2; j++ {
-			fmt.Println(i * j)
+			fmt.Println("2 * ", i, "=", i*j)
 		}
 		//fmt.Println(i)
+	}
+	for x := 10; x > 5; x-- {
+		fmt.Println("lets decrease", x)
 	}
 }
 
