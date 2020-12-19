@@ -14,7 +14,7 @@ it can be used outside function.
 
 STANDARD USER INPUT --------------------------------
 
-buffio package is mostly used for file input and output
+bufio package is mostly used for file input and output
 and its common functionality is to access command line arguments of Go program.
 
 OS package------------------------------------------------
