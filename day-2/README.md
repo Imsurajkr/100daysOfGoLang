@@ -18,7 +18,7 @@ GoDoc utility
     godoc -http=:8000 
     ##8000 is the port number where the docs will open in offline mode.
     you can choose any port number of your own choice but not in between 0-1023 because they are restricted to be used by root user only.
-    ##after that,point your browser to http://localhost:8001/pkg/  url to browse the documentation.
+    ##after that,point your browser to http://localhost:8000/pkg/  url to browse the documentation.
     ##there may cause an error that"godoc is not recognised as an internal and external command
     then you should run below command in your terminal
     go get -v  golang.org/x/tools/cmd/godoc
