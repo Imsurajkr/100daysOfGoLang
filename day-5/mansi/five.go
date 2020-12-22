@@ -1,4 +1,4 @@
-// len(str) method returns the number of bytes contained in the string literal.
+
 
 
 package main
