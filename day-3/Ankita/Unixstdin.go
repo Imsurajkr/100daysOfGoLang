@@ -17,7 +17,7 @@ UNIX uses three special and standard file names
 	all the below mentioned functions are present in "fmt" package.
 	printf()--- use when you want to modify output according to you like if you want to add modifier specifiers.
 	println()--use when you want to add a new line character at the end of line automatically
-	print()--you can use When want to print anything without any format specifier and new line character.package Ankita
+	print()--you can use When want to print anything without any format specifier and new line character
 
 	S family of print functions-------create strings based on a given format
 	Sprintf()
