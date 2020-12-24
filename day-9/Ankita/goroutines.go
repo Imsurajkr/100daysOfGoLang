@@ -1,6 +1,8 @@
 /*
 ==================what are go routines ?
 A goroutine is a lightweight thread managed by the Go runtime.
+using go routines we can make our sequential program into concurrent program
+
 =====================================goroutines vs threads ?
 GOROUTINE	                                                        THREAD
 1.Goroutines are managed by the go runtime.	                   1.Operating system threads are managed by kernal.
@@ -41,3 +43,25 @@ However, if you communicate using channels in go which exists only in virtual sp
   runnable goroutine (from the M struct) is scheduled in it’s place.
 
 */
+
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func number(num int) {
+	for i := 0; i < num; i++ {
+		// wait function which will wait for 1 sec before printing
+		time.Sleep(time.Second)
+		fmt.Println(i)
+	}
+}
+func main() {
+	//can make a function goroutine and concurrent by adding go keyword as prefix to a function call
+	go number(5)
+	go number(5)
+	//it is added so that our main function do not terminate before execution of our go routines
+	fmt.Scanln()
+}
