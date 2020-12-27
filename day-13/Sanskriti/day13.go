@@ -54,9 +54,12 @@ func main() {
    2. Using an array
    3. Using already existing slices
    4. Using make() function
-   5. Using for loop
-   6. Using range in for loop
-   7. Using a blank identifier in for loop
+*/
+/*
+   Ways to iterate over a slice:
+   1. Using for loop
+   2. Using range in for loop
+   3. Using a blank identifier in for loop
 */
 
 /*
