@@ -6,14 +6,14 @@ package main
 
 import "fmt"
 
-func main() {
+func loops() {
 	for i := 0; i < 10; i++ {
 		if i == 5 {
 			continue
 		}
 		fmt.Println(i)
 	}
-	ank := true
+	// ank := true
 	// while (ank) {
 	// 	fmt.Println("entered in while loop");
 	// 	ank = false
