@@ -31,7 +31,7 @@ package main
 
 import "fmt"
 
-func main() {
+func datatype() {
 	// i=9
 	c1 := 23 + 4i
 	// s := "ankita"
