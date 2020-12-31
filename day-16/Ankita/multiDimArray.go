@@ -10,6 +10,19 @@ detected as compiler errors because this helps the development workflow. Therefo
 Go compiler can detect out-of-bounds array access errors:
 ./a.go:10: invalid array index -1 (index must be non-negative)
 ./a.go:10: invalid array index 20 (out of bounds for 2-element array)
+for ind, value := range arr{
+	v : = value
+	for index,val := range v{
+        fmt.println(val)
+	}
+}
+
+1  2 3 4
+5  6 7 8
+9 10 11 12
+13 14 15 16
+
+
 */
 
 package main
@@ -26,6 +39,13 @@ func main() {
 	fmt.Println("The length of", anArray, "is", len(anArray))
 	fmt.Println("The first element of", twoD, "is", twoD[0][0])
 	fmt.Println("The length of", threeD, "is", len(threeD))
+	for value := range twoD {
+		row := value
+		fmt.Println(row, "sssssssssssss")
+		// for k := 0; k < len(row); k++ {
+		// 	fmt.Println(valuee)
+		// }
+	}
 	for i := 0; i < len(threeD); i++ {
 		v := threeD[i]
 		for j := 0; j < len(v); j++ {
