@@ -31,12 +31,12 @@ package main
 
 import "fmt"
 
-func datatype() {
+func main() {
 	// i=9
 	c1 := 23 + 4i
 	// s := "ankita"
 	// c9 = 23 +4*i
-	c2 := complex(5, 7)
+	c2 := complex(5, 7) //5+7i
 	//here we can not use Println,print instead of printf because Println call has possible formatting directive %T
 	fmt.Printf("Type of c1: %T\n", c1)
 	fmt.Printf("Type Of c2: %T", c2)
