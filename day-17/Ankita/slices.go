@@ -14,6 +14,11 @@ pass the memory address of the slice variable.
 1.A pointer (reference) to an underlying array.
 2.The length of the segment of the array that the slice contains.
 3.The capacity (the maximum size up to which the segment can grow).
+####If you want to empty an existing slice, the zero value for a slice variable is nil:
+slc = nil
+You can add an element to the slice, which will automatically increase its size, using the
+append() function:
+slc = append(slc, 12345)
 */
 
 package main
@@ -41,4 +46,5 @@ func main() {
 	fmt.Println(slice3)
 	fmt.Println(slice4)
 	fmt.Println(slice5)
+	fmt.Printf("s = %v, len = %d, cap = %d\n", s, len(slice2), cap(slice2))
 }
