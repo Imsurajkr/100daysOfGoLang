@@ -39,11 +39,13 @@ func main() {
 		fmt.Println("index:", i, "value: ", value)
 	}
 	// a := 3
-	for i := 0; i < 4; i++ {
-
-		for j := i / 2; j < 4; j++ {
+	for i := 0; i <= 3; i++ {
+		for j := i; j < 3; j++ {
+			fmt.Print(" ")
+		}
+		for k := 1; k < (i * 2); k++ {
 			fmt.Print("*")
 		}
-		fmt.Println("--")
+		fmt.Println("")
 	}
 }

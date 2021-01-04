@@ -28,7 +28,7 @@ func two(aLog *log.Logger) {
 
 // Change three to main
 
-func three() {
+func main() {
 	f, err := os.OpenFile(LOGFILE,
 		os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
