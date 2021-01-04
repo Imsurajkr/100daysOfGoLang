@@ -28,7 +28,7 @@ func b() {
 }
 
 // Change G to main
-func g() {
+func main() {
 	a()
 	fmt.Println("main() ended!")
 }

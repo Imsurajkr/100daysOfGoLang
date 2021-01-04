@@ -17,7 +17,7 @@ func d4() {
 	fmt.Println()
 }
 
-func d5() {
+func d10() {
 	d4()
 }
 

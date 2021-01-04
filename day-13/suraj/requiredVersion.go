@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main() {
+func k1() {
 	myVersion := runtime.Version()
 	fmt.Println("----- That's My Version ----", myVersion)
 	major := strings.Split(myVersion, ".")[0][2]
