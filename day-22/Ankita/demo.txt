@@ -1,0 +1,60 @@
+Probably the most effective way to achieve paragraph unity is to express the central idea of the paragraph in a 
+topic sentence.
+
+Topic sentences are similar to mini thesis statements. Like a thesis statement, a topic sentence has a specific main
+ point. Whereas the thesis is the 
+main point of the essay, the topic sentence is the main point of the paragraph. Like the thesis statement, a topic
+ sentence has a unifying function.
+ But a thesis statement or topic sentence alone doesn’t guarantee unity. An essay is unified if all the paragraphs
+  relate to the thesis, whereas a paragraph is unified if all the sentences relate to the topic sentence. Note: Not
+   all paragraphs need topic sentences. In particular, opening and closing paragraphs, which serve different 
+functions from body paragraphs, generally don’t have topic sentences.
+
+In academic writing, the topic sentence nearly always works best at the beginning of a paragraph so that the 
+reader knows what to expect:
+
+The embrace of Twitter by politicians and journalists has been one of its most notable features in recent years: 
+for both groups the use of 
+Twitter is becoming close to a requirement.
+—Paul Bernal, “A Defence of Responsible Tweeting”
+This topic sentence forecasts the central idea or main point of the paragraph: “politicians” and “journalists” 
+rely on Twitter. The rest of the paragraph will focus on these two Twitter-user groups, thereby fulfilling the 
+promise made by the topic sentence. By avoiding irrelevant information that does not relate to the topic sentence,
+you can compose a unified paragraph.
+How do I develop my ideas in a paragraph?
+Often, the body paragraph demonstrates and develops your topic sentence through an ordered, logical progression of 
+ideas. There are a number of useful techniques for expanding on topic sentences and developing your ideas in a 
+paragraph. Illustration in a paragraph supports a general statement by means of examples, details, or relevant 
+quotations (with your comments).
+In Harry’s world fate works not only through powers and objects such as prophecies, the Sorting Hat, wands, and
+the Goblet of Fire, but also through people. Repeatedly, other characters decide Harry’s future for him, depriving
+him of freedom and choice. For example, before his eleventh birthday, the Dursleys control Harry’s life, keeping
+from him knowledge of his past and understanding of his identity (Sorcerer’s 49). In Harry Potter and the Chamber
+of Secrets, Dobby repeatedly assumes control over events by intercepting Ron’s and Hermione’s letters during the
+summer; by sealing the barrier to Platform 93⁄4, causing Harry to miss the Hogwarts Express; and by sending a
+Bludger after Harry in a Quidditch match, breaking his wrist. Yet again, in Harry Potter and the Prisoner of 
+Azkaban, many adults intercede while attempting to protect Harry from perceived danger, as Snape observes: 
+“Everyone from the Minister of Magic downward has been trying to keep famous Harry Potter safe from Sirius
+Black” (284). All these characters, as enactors of fate, unknowingly drive Harry toward his destiny by 
+attempting to control or to direct his life, while themselves controlled and directed by fate.
+—Julia Pond, “A Story of the Exceptional: Fate and Free Will in the Harry Potter Series”
+The definition paragraph does exactly what you would expect: it defines a term, often by drawing distinctions
+between the term and other related ones. The definition that you provide will often be specific to your subject 
+area. Try to avoid perfunctory dictionary definitions that do not inform your analysis in a meaningful way.
+Our typology is built on three dimensions: internality, types of participants, and the degree of effective 
+resistance. For our study, a civil war is any armed conflict that involves (a) military action internal to the
+metropole, (b) the active participation of the national government, and (c) effective resistance by both sides.
+With these criteria, we differentiate civil wars from other types of internal violent conflicts.
+—Melvin Small and J. David Singer, Resort to Arms: International and Civil Wars, 1816–1980
+The analysis or classification paragraph develops a topic by distinguishing its component parts and discussing
+each of these parts separately.
+Policies of privatisation should be considered as responses to several distinct pressures. First, privatisation
+is a response by the state to internal forces such as increasing fiscal problems (O’Connor, 1973). It provides 
+a means of lessening the state’s fiscal responsibilities by encouraging the development of private alternatives
+which, theoretically at least, do not draw upon the state’s financial reserves. Second, the promotion of private
+sector activity is a response to pressures originating ‘outside’ the state apparatus. These include demands from
+people who see a large state bureaucracy as inefficient and wasteful, demands from business interests who claim 
+that they can overcome these inefficiencies, and pressures from client groups who seek to reduce their dependency
+on the welfare state by having more control over the services on which they depend. Clearly, this variety of
+calls for privatisation means that it is not a process with a uniform outcome; there exists a correspondingly
+wide variety of forms of privatisation.
