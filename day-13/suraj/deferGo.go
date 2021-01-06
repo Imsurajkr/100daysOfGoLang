@@ -24,7 +24,7 @@ func d2() {
 // Its very important to understand that defer keyword follows the Last In Fist Out
 // And we call it through fmt package
 
-func d3() {
+func d11() {
 	d2()
 }
 

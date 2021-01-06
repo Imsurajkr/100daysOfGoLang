@@ -14,7 +14,7 @@ func d7() {
 
 // Replace d8 with main to execute the programme
 
-func d8() {
+func main() {
 	d7()
 }
 
