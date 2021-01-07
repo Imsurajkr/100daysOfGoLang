@@ -15,7 +15,7 @@ type s1 struct {
 
 func main() {
 
-	//var p1 = s1{name: "Ankita", age: 22, profile: "Reactjs Developer", qualifications: []string{"Bsc", "MCA"}}
+	//var p1 = s1{name: "Ankita", age: 22, profile: "Reactjs Developer", qualifications: ["MCA","BSC"]}
 	p1 := s1{name: "Ankita", age: 22, profile: "Reactjs Developer", qualifications: []string{"Bsc", "MCA"}}
 	fmt.Println(p1.qualifications)
 	fmt.Println(p1)

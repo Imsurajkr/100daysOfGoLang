@@ -50,3 +50,9 @@ func main() {
 	sP := new([]myStructure)
 	fmt.Println(sP)
 }
+
+/*
+   var a = 10
+   var int* b = &a
+   fmt.println(*b)
+*/
