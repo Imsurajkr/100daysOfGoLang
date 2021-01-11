@@ -50,7 +50,7 @@ func PRINT() {
 		fmt.Printf("key: %s value: %v\n", k, d)
 	}
 }
-func key() {
+func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
 		text := scanner.Text()
