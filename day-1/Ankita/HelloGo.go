@@ -6,7 +6,7 @@ package main
 //import statement is used to importing a package another package.
 //import fmt is imported to use function Println which comes from go standard library.
 //compiler will look into GOROOT and GOPATH for imported packages.
-//packages from standard library are installed in GOR OOT location while packages
+//packages from standard library are installed in GOROOT location while packages
 //created by yourself and third party packages whichyou have installed are available in GOPATH location
 import "fmt"
 
