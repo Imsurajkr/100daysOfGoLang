@@ -7,7 +7,7 @@ import (
 )
 
 type Foo struct {
-	A int `tag1:"First Tag" tag2:"Second Tag"`
+	A int
 	B string
 }
 
