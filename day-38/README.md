@@ -17,3 +17,9 @@
         fmt.Println(f.A, f.B)
         }
 * But sometimes you want to work with variables at runtime using information that didn’t exist when the program was written. Maybe you’re trying to map data from a file or network request into a variable. Maybe you want to build a tool that works with different types. In those situations, you need to use reflection. 
+
+# Disadvantages of Reflection
+* extensive use of reflection will make your programs hard to read and maintain.
+* Go code that uses reflection will make your programs slower.
+* reflection errors cannot be caught at build time and are reported at
+runtime as panics, which means that reflection errors can potentially crash your programs.
