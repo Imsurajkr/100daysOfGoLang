@@ -9,7 +9,7 @@ import (
 
 var url = []string{
 	"https://google.com",
-	"https://twitter.com",
+	"https://www.twitter.com",
 	"https://facebook.com",
 }
 
@@ -20,9 +20,9 @@ func fetchstatus(w http.ResponseWriter, r *http.Request) {
 		func(url string) {
 			resp, err := http.Get(urls)
 			if err != nil {
-				fmt.Fprint(w, "%+v", err)
+				fmt.Fprint(w, err)
 			}
-			fmt.Fprint(w, "%+v", resp)
+			fmt.Fprint(w, resp.Status)
 			wg.Done()
 		}(urls)
 	}
