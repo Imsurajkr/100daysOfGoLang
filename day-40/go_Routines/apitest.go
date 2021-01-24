@@ -9,7 +9,7 @@ import (
 
 var url = []string{
 	"https://google.com",
-	"https://twitter.com",
+	"https://www.twitter.com",
 	"https://facebook.com",
 }
 
