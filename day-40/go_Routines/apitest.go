@@ -15,17 +15,17 @@ var url = []string{
 
 func fetchstatus(w http.ResponseWriter, r *http.Request) {
 	var wg sync.WaitGroup
-	for _, urls := range url {
-		wg.Add(1)
-		func(url string) {
-			resp, err := http.Get(urls)
-			if err != nil {
-				fmt.Fprint(w, err)
-			}
-			fmt.Fprint(w, resp.Status)
-			wg.Done()
-		}(urls)
-	}
+	// for _, urls := range url {
+	wg.Add(1)
+	func() {
+		resp, err := http.Get("http://google.com")
+		if err != nil {
+			fmt.Fprint(w, "%+v", err)
+		}
+		fmt.Fprint(w, "%+v", resp)
+		wg.Done()
+	}()
+	//}
 	wg.Wait()
 }
 
