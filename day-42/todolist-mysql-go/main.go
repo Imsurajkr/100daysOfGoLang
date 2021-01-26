@@ -65,16 +65,62 @@ func fetchall(w http.ResponseWriter, r *http.Request) {
 
 func deleteUser(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("content-type", "application/json")
+	params := mux.Vars(r)
+	id, _ := primitive.ObjectIDFromHex(params["id"])
+	var person Person
+	fmt.Println(id)
+	collection := client.Database("<dbname>").Collection("people")
+	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	result, err := collection.DeleteOne(ctx, bson.M{"_id": id})
+	fmt.Println(person)
+	fmt.Println(err)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(`{ "message": "` + err.Error() + `" }`))
+		return
+	}
+	json.NewEncoder(w).Encode(result)
+}
+
+func getUserTask(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("content-type", "application/json")
+	params := mux.Vars(r)
+	id, _ := primitive.ObjectIDFromHex(params["id"])
+	fmt.Println(id)
+	collection := client.Database("<dbname>").Collection("people")
+	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	result, err := collection.Find(ctx, bson.M{"_id": id})
+	fmt.Println(result)
+	fmt.Println(err)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(`{ "message": "` + err.Error() + `" }`))
+		return
+	}
+	var episodes []bson.M
+	if err = result.All(ctx, &episodes); err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(episodes)
+	json.NewEncoder(w).Encode(episodes)
 
 }
 
-// func updateUser(){
-
-// }
-
-// func getUserTask(){
-
-// }
+func updateUser(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("content-type", "application/json")
+	params := mux.Vars(r)
+	id, _ := primitive.ObjectIDFromHex(params["id"])
+	fmt.Println(id)
+	collection := client.Database("<dbname>").Collection("people")
+	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	result, err := collection.UpdateOne(ctx, bson.M{"_id": id},
+		bson.D{{"$set", bson.D{{"name", "SHIZUKA"}}}})
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("Updated %v Documents!\n", result.ModifiedCount)
+	json.NewEncoder(w).Encode(result)
+}
 
 func main() {
 	log.Info("starting server")
@@ -100,5 +146,8 @@ func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/add", createUser).Methods("POST")
 	router.HandleFunc("/allUser", fetchall).Methods("GET")
+	router.HandleFunc("/delete/{id}", deleteUser).Methods("DELETE")
+	router.HandleFunc("/fetchUser/{id}", getUserTask).Methods("GET")
+	router.HandleFunc("/updateUser/{id}", updateUser).Methods("PUT")
 	http.ListenAndServe(":8080", router)
 }
