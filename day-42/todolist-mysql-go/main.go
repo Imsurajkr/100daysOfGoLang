@@ -103,6 +103,23 @@ func getUserTask(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Println(episodes)
 	json.NewEncoder(w).Encode(episodes)
+
+}
+
+func updateUser(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("content-type", "application/json")
+	params := mux.Vars(r)
+	id, _ := primitive.ObjectIDFromHex(params["id"])
+	fmt.Println(id)
+	collection := client.Database("<dbname>").Collection("people")
+	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	result, err := collection.UpdateOne(ctx, bson.M{"_id": id},
+		bson.D{{"$set", bson.D{{"name", "SHIZUKA"}}}})
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("Updated %v Documents!\n", result.ModifiedCount)
+	json.NewEncoder(w).Encode(result)
 }
 
 func main() {
@@ -131,5 +148,6 @@ func main() {
 	router.HandleFunc("/allUser", fetchall).Methods("GET")
 	router.HandleFunc("/delete/{id}", deleteUser).Methods("DELETE")
 	router.HandleFunc("/fetchUser/{id}", getUserTask).Methods("GET")
+	router.HandleFunc("/updateUser/{id}", updateUser).Methods("PUT")
 	http.ListenAndServe(":8080", router)
 }
