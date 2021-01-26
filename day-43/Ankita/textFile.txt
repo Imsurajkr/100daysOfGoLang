@@ -1,0 +1,14 @@
+
+Techopedia explains Text File
+A text file is used to store standard and structured textual data or information 
+that is human readable. It is defined in several different formats, including the
+ most popular ASCII for cross-platform usage, and ANSI for Windows-based operating
+  platforms. It lacks text formatting abilities, such as text alignment, bold text and font styles.
+
+In a Windows operating system (OS), a text file is created using a text editor, 
+such as Notepad or Word. It has a file extension of .txt.
+
+Besides simply text, a text file is used to write and store source code for 
+virtually all programming languages, such as Java or PHP. The created file can 
+be converted to the respective programming language by changing the file 
+extension from .txt to .php or .cpp.
