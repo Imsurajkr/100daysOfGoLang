@@ -6,7 +6,7 @@ import (
 )
 
 func GOMAXPROCS() int {
-	return runtime.GOMAXPROCS(0)
+	return runtime.GOMAXPROCS(900)
 }
 
 func main() {
