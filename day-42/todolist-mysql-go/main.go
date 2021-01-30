@@ -33,41 +33,74 @@ type Person struct {
 
 var client *mongo.Client
 var err error
+var person Person
+var episodes []bson.M
 
 func createUser(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("content-type", "application/json")
-	fmt.Println(r.Body)
-	var person Person
-
-	_ = json.NewDecoder(r.Body).Decode(&person)
+	if r.Method != http.MethodPost {
+		w.WriteHeader(405)
+		return
+	}
+	dec := json.NewDecoder(r.Body).Decode(&person)
+	if dec == nil {
+		w.WriteHeader(500)
+		return
+	} else if len(person.Name) <= 0 || len(person.Description) <= 0 || person.Age == 0 || person.Age < 0 {
+		fmt.Println("Please Provide specified field")
+		w.WriteHeader(400)
+		return
+	}
 	collection := client.Database("<dbname>").Collection("people")
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-	fmt.Println(person)
-	result, _ := collection.InsertOne(ctx, person)
-	json.NewEncoder(w).Encode(result)
+	result, err := collection.Find(ctx, bson.M{"name": person.Name})
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(`{ "message": "` + err.Error() + `" }`))
+		return
+	}
+	if err = result.All(ctx, &episodes); err != nil {
+		w.WriteHeader(400)
+		return
+	}
+	if episodes == nil {
+		res, _ := collection.InsertOne(ctx, person)
+		json.NewEncoder(w).Encode(res)
+		return
+	}
+
 }
 
 func fetchall(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("content-type", "application/json")
+	if r.Method != http.MethodGet {
+		w.WriteHeader(405)
+		return
+	}
 	collection := client.Database("<dbname>").Collection("people")
 	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
 	result, err := collection.Find(ctx, bson.M{})
 	if err != nil {
-		log.Fatal(err)
+		json.NewEncoder(w).Encode(err)
 	}
-	var episodes []bson.M
+
 	if err = result.All(ctx, &episodes); err != nil {
-		log.Fatal(err)
+		w.WriteHeader(500)
+		json.NewEncoder(w).Encode(err)
 	}
-	fmt.Println(episodes)
+	if episodes == nil {
+		w.WriteHeader(400)
+		json.NewEncoder(w).Encode("No Data Found")
+		return
+	}
 	json.NewEncoder(w).Encode(episodes)
 }
 
 func deleteUser(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("content-type", "application/json")
+	if r.Method != http.MethodDelete {
+		w.WriteHeader(405)
+		return
+	}
 	params := mux.Vars(r)
 	id, _ := primitive.ObjectIDFromHex(params["id"])
-	var person Person
 	fmt.Println(id)
 	collection := client.Database("<dbname>").Collection("people")
 	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
@@ -83,7 +116,10 @@ func deleteUser(w http.ResponseWriter, r *http.Request) {
 }
 
 func getUserTask(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("content-type", "application/json")
+	if r.Method != http.MethodGet {
+		w.WriteHeader(405)
+		return
+	}
 	params := mux.Vars(r)
 	id, _ := primitive.ObjectIDFromHex(params["id"])
 	fmt.Println(id)
@@ -97,7 +133,6 @@ func getUserTask(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(`{ "message": "` + err.Error() + `" }`))
 		return
 	}
-	var episodes []bson.M
 	if err = result.All(ctx, &episodes); err != nil {
 		log.Fatal(err)
 	}
